@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tracie Bonds — Biblical Mindset Coach, Author, Speaker</title>
+<meta name="description" content="GOD, I WANT TO HEAR YOU is here. Join the waitlist for the companion Workbook, Journal, and Leader's Guide." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #1A365D;          /* Deep Blue — headlines, logo, foundation */
+    --navy-deep: #102444;
+    --pink: #FF1494;          /* Deep Pink — exact hex Judy used on the cover */
+    --pink-deep: #D60E78;
+    --teal: #0097A7;          /* Vibrant Teal — secondary buttons, accents, depth */
+    --sunshine: #FFD93D;      /* Sunshine — joy, highlights, announcements */
+    --cream: #FAF7F2;         /* Cream — backgrounds */
+    --cream-soft: #FBF8F3;    /* Pale Gold Glow — soft backgrounds */
+    --white: #FFFFFF;
+    --ink: #1A365D;
+    --ink-soft: #4A5878;
+    --line: #E5DDD0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+  /* NAV */
+  nav { padding: 24px 0; border-bottom: 1px solid var(--line); background: var(--cream); position: sticky; top: 0; z-index: 100; }
+  nav .container { display: flex; justify-content: space-between; align-items: center; }
+  .brand { font-family: 'Fraunces', serif; font-weight: 600; font-size: 20px; color: var(--navy); text-decoration: none; }
+  .brand span { color: var(--pink); font-style: italic; font-weight: 500; }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a { color: var(--ink-soft); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--pink); }
+  @media (max-width: 640px) { .nav-links { display: none; } }
+
+  /* HERO */
+  .hero { padding: 80px 0 100px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255, 20, 148, 0.06) 0%, transparent 70%); border-radius: 50%; z-index: 0; }
+  .hero .container { position: relative; z-index: 1; }
+  .launch-badge { display: inline-flex; align-items: center; gap: 10px; background: var(--pink); color: var(--cream); padding: 10px 18px; border-radius: 100px; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 32px; animation: pulse 2.5s ease-in-out infinite; }
+  .launch-badge .dot { width: 8px; height: 8px; background: var(--cream); border-radius: 50%; animation: blink 1.5s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(255, 20, 148, 0.4); } 50% { box-shadow: 0 0 0 12px rgba(255, 20, 148, 0); } }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .series-tag { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--navy); font-weight: 700; margin-bottom: 16px; }
+  h1 { font-family: 'Fraunces', serif; font-weight: 500; font-size: clamp(40px, 6vw, 68px); line-height: 1.05; letter-spacing: -0.02em; color: var(--navy); margin-bottom: 20px; max-width: 900px; }
+  h1 em { font-style: italic; color: var(--pink); font-weight: 500; }
+  .hero-lead { font-family: 'Fraunces', serif; font-size: clamp(18px, 2vw, 22px); line-height: 1.5; color: var(--ink-soft); max-width: 640px; margin-bottom: 40px; font-style: italic; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 32px; border-radius: 4px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 15px; text-decoration: none; transition: all 0.25s ease; cursor: pointer; border: 2px solid transparent; letter-spacing: 0.3px; }
+  .btn-primary { background: var(--pink); color: var(--cream); }
+  .btn-primary:hover { background: var(--pink-deep); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 20, 148, 0.3); }
+  .btn-secondary { background: transparent; color: var(--navy); border-color: var(--navy); }
+  .btn-secondary:hover { background: var(--navy); color: var(--cream); }
+
+  /* COUNTDOWN */
+  .countdown-section { background: var(--navy); color: var(--cream); padding: 50px 0; text-align: center; }
+  .countdown-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: rgba(250, 247, 242, 0.6); margin-bottom: 20px; }
+  .countdown-title { font-family: 'Fraunces', serif; font-style: italic; font-size: clamp(22px, 3vw, 30px); margin-bottom: 32px; color: var(--cream); }
+  .countdown-title strong { color: var(--pink); font-weight: 500; }
+  .countdown-grid { display: flex; justify-content: center; gap: clamp(16px, 4vw, 48px); flex-wrap: wrap; }
+  .countdown-cell { min-width: 80px; }
+  .countdown-num { font-family: 'Fraunces', serif; font-size: clamp(40px, 6vw, 64px); font-weight: 400; color: var(--pink); line-height: 1; margin-bottom: 8px; }
+  .countdown-unit { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(250, 247, 242, 0.6); }
+
+  /* BOOK */
+  .book-section { padding: 100px 0; background: var(--cream-soft); }
+  .book-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: center; }
+  @media (max-width: 860px) { .book-grid { grid-template-columns: 1fr; gap: 48px; } }
+  .book-cover { aspect-ratio: 6 / 9; border-radius: 4px; box-shadow: 0 30px 60px -15px rgba(26, 54, 93, 0.3), 0 18px 36px -18px rgba(26, 54, 93, 0.25); position: relative; transform: rotate(-2deg); transition: transform 0.4s ease; max-width: 340px; margin: 0 auto; overflow: hidden; }
+  .book-cover:hover { transform: rotate(0deg) scale(1.02); }
+  .book-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .section-eyebrow { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--pink); font-weight: 700; margin-bottom: 16px; }
+  h2 { font-family: 'Fraunces', serif; font-weight: 500; font-size: clamp(32px, 4.5vw, 48px); line-height: 1.1; letter-spacing: -0.01em; color: var(--navy); margin-bottom: 24px; }
+  h2 em { font-style: italic; color: var(--pink); font-weight: 500; }
+  .book-section p { font-size: 17px; line-height: 1.7; color: var(--ink-soft); margin-bottom: 16px; }
+  .book-section p:last-of-type { margin-bottom: 32px; }
+
+  /* WAITLIST */
+  .waitlist { padding: 100px 0; background: var(--cream); position: relative; }
+  .waitlist-header { text-align: center; max-width: 680px; margin: 0 auto 64px; }
+  .waitlist-header p { font-family: 'Fraunces', serif; font-style: italic; font-size: 19px; color: var(--ink-soft); line-height: 1.6; }
+  .resources-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 64px; }
+  @media (max-width: 860px) { .resources-grid { grid-template-columns: 1fr; } }
+  .resource-card { background: var(--cream-soft); border: 1px solid var(--line); border-radius: 6px; padding: 36px 32px; transition: all 0.3s ease; position: relative; overflow: hidden; }
+  .resource-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--pink); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+  .resource-card:hover { transform: translateY(-4px); box-shadow: 0 16px 32px -16px rgba(26, 54, 93, 0.15); }
+  .resource-card:hover::before { transform: scaleX(1); }
+  .resource-num { font-family: 'Fraunces', serif; font-style: italic; font-size: 14px; color: var(--pink); margin-bottom: 12px; font-weight: 500; }
+  .resource-card h3 { font-family: 'Fraunces', serif; font-weight: 600; font-size: 24px; color: var(--navy); margin-bottom: 12px; }
+  .resource-card p { font-size: 15px; color: var(--ink-soft); line-height: 1.6; }
+  .resource-card .status { display: inline-block; margin-top: 20px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--pink); font-weight: 700; }
+
+  /* FORM */
+  .form-wrap { max-width: 520px; margin: 0 auto; background: var(--cream-soft); border: 1px solid var(--line); border-radius: 6px; padding: 48px 40px; text-align: center; }
+  .form-wrap h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 28px; color: var(--navy); margin-bottom: 12px; }
+  .form-wrap > p { font-size: 15px; color: var(--ink-soft); margin-bottom: 28px; }
+  .form-fields { display: flex; flex-direction: column; gap: 14px; }
+  .form-fields input { width: 100%; padding: 14px 18px; border: 1px solid var(--line); border-radius: 4px; font-family: 'Inter', sans-serif; font-size: 15px; background: var(--cream); color: var(--ink); transition: border-color 0.2s; }
+  .form-fields input:focus { outline: none; border-color: var(--pink); }
+  .form-fields button { background: var(--pink); color: var(--cream); border: none; padding: 16px; border-radius: 4px; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.5px; cursor: pointer; transition: background 0.25s; margin-top: 8px; }
+  .form-fields button:hover { background: var(--pink-deep); }
+  .form-note { font-size: 12px; color: var(--ink-soft); margin-top: 18px; opacity: 0.75; }
+  .success-msg { display: none; background: rgba(255, 20, 148, 0.08); border: 1px solid var(--pink); border-radius: 4px; padding: 20px; color: var(--pink-deep); font-family: 'Fraunces', serif; font-size: 17px; font-style: italic; }
+  .success-msg.visible { display: block; }
+
+  /* ABOUT */
+  .about { padding: 100px 0; background: var(--navy); color: var(--cream); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: center; }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
+  .about-portrait { aspect-ratio: 1 / 1; border-radius: 4px; max-width: 360px; margin: 0 auto; overflow: hidden; box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4); }
+  .about-portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .about .section-eyebrow { color: var(--pink); }
+  .about h2 { color: var(--cream); }
+  .about h2 em { color: var(--pink); }
+  .about p { font-size: 17px; line-height: 1.75; color: rgba(250, 247, 242, 0.85); margin-bottom: 18px; }
+  .signature { font-family: 'Fraunces', serif; font-style: italic; font-size: 20px; color: var(--pink); margin-top: 32px; }
+
+  /* PRAYER */
+  .prayer-call { padding: 80px 0; background: var(--cream-soft); text-align: center; }
+  .prayer-call .container { max-width: 600px; }
+  .prayer-call h2 { margin-bottom: 20px; }
+  .prayer-call > .container > p { font-family: 'Fraunces', serif; font-style: italic; font-size: 19px; color: var(--ink-soft); line-height: 1.6; margin-bottom: 32px; }
+  .prayer-meta { display: inline-block; background: var(--cream); border: 1px solid var(--line); padding: 20px 28px; border-radius: 6px; font-size: 14px; color: var(--navy); line-height: 1.7; margin-bottom: 40px; }
+  .prayer-meta strong { color: var(--pink); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-size: 12px; }
+  .prayer-cta-wrap { background: var(--cream); border: 1px solid var(--line); border-radius: 6px; padding: 40px 32px; margin-top: 8px; }
+  .prayer-cta-note { font-family: 'Inter', sans-serif !important; font-style: normal !important; font-size: 15px !important; color: var(--ink-soft) !important; margin-bottom: 24px !important; line-height: 1.5 !important; }
+  .prayer-form { max-width: 400px; margin: 0 auto; }
+
+  /* FOOTER */
+  footer { background: var(--navy); color: rgba(250, 247, 242, 0.6); padding: 56px 0 36px; text-align: center; font-size: 13px; }
+  footer p { margin-bottom: 8px; }
+  footer .sign-off { font-family: 'Fraunces', serif; font-style: italic; color: var(--pink); font-size: 16px; margin-bottom: 28px; }
+  .footer-logo { background: var(--cream); width: 140px; height: 140px; border-radius: 50%; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; padding: 22px; }
+  .footer-logo img { width: 100%; height: auto; display: block; }
+
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="#" class="brand">Tracie <span>Bonds</span></a>
+    <div class="nav-links">
+      <a href="#book">The Book</a>
+      <a href="#waitlist">Waitlist</a>
+      <a href="#about">About</a>
+      <a href="#prayer">Prayer Call</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="launch-badge">
+      <span class="dot"></span>
+      Launching 2 AM CST May 27
+    </div>
+    <div class="series-tag">The Radical Faith Series</div>
+    <h1>God is speaking.<br><em>Can you hear Him?</em></h1>
+    <p class="hero-lead">GOD, I WANT TO HEAR YOU is here. The companion Workbook, Journal, and Leader's Guide are coming next. Join the waitlist below.</p>
+    <div class="hero-actions">
+      <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+      <a href="#book" class="btn btn-secondary">About the Book</a>
+    </div>
+  </div>
+</section>
+
+<section class="countdown-section">
+  <div class="container">
+    <div class="countdown-label">Kindle eBook Launches In</div>
+    <div class="countdown-title">GOD, I WANT TO HEAR YOU <strong>9 Essential Practices</strong></div>
+    <div class="countdown-grid" id="countdown">
+      <div class="countdown-cell"><div class="countdown-num" id="cd-days">--</div><div class="countdown-unit">Days</div></div>
+      <div class="countdown-cell"><div class="countdown-num" id="cd-hours">--</div><div class="countdown-unit">Hours</div></div>
+      <div class="countdown-cell"><div class="countdown-num" id="cd-mins">--</div><div class="countdown-unit">Minutes</div></div>
+      <div class="countdown-cell"><div class="countdown-num" id="cd-secs">--</div><div class="countdown-unit">Seconds</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="book-section" id="book">
+  <div class="container">
+    <div class="book-grid">
+      <div class="book-cover reveal">
+        <img src="images/book-cover.jpg" alt="GOD, I WANT TO HEAR YOU by Tracie Bonds — book cover" />
+      </div>
+
+      <div class="reveal">
+        <div class="section-eyebrow">The Book</div>
+        <h2>9 essential practices for hearing <em>HIS voice.</em></h2>
+        <p>Many struggle to recognize when God is speaking. You wonder if that nudge was from Him or simply your own thoughts.</p>
+        <p>In GOD, I WANT TO HEAR YOU, I share 9 essential practices, personal testimonies, reflection questions, and powerful prayers that can transform how you hear and communicate with God.</p>
+        <p>Whether you are new to faith or have walked with Jesus for years, these practices will help you hear HIS voice more clearly.</p>
+        <a href="#waitlist" class="btn btn-primary">Get the Companion Resources</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="waitlist" id="waitlist">
+  <div class="container">
+    <div class="waitlist-header reveal">
+      <div class="section-eyebrow">Coming Soon</div>
+      <h2>Go deeper with the <em>companion resources.</em></h2>
+      <p>The book is just the beginning. Three companion resources are coming to help you go deeper, journal what you are hearing, and lead others through the practices.</p>
+    </div>
+
+    <div class="resources-grid">
+      <div class="resource-card reveal">
+        <div class="resource-num">01 / Workbook</div>
+        <h3>The Study Workbook</h3>
+        <p>A guided implementation of all nine practices, with space to write, reflect, and respond to what God is speaking in, on, and through you.</p>
+        <span class="status">Coming June 2026</span>
+      </div>
+      <div class="resource-card reveal">
+        <div class="resource-num">02 / Journal</div>
+        <h3>The Hearing God Journal</h3>
+        <p>A daily companion for capturing what you hear when you slow down enough to listen. Prompts, scripture, and room to record His voice.</p>
+        <span class="status">Coming June 2026</span>
+      </div>
+      <div class="resource-card reveal">
+        <div class="resource-num">03 / Leader's Guide</div>
+        <h3>The Leader's Guide</h3>
+        <p>Everything you need to walk a small group, Bible study, or cohort through the nine practices in community.</p>
+        <span class="status">Coming June 2026</span>
+      </div>
+    </div>
+
+    <div class="form-wrap reveal">
+      <h3>Get notified first</h3>
+      <p>Be the first to know when the Workbook, Journal, and Leader's Guide become available.</p>
+
+      <form class="form-fields" id="waitlistForm">
+        <input type="text" name="first_name" placeholder="First name" required />
+        <input type="email" name="email" placeholder="Email address" required />
+        <button type="submit">Join the Waitlist</button>
+      </form>
+
+      <div class="success-msg" id="successMsg">
+        You're on the list. I cannot wait to share these with you.
+      </div>
+
+      <p class="form-note">No spam, ever. Unsubscribe with one click.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-portrait reveal"><img src="images/tracie-photo.jpg" alt="Tracie Bonds" /></div>
+      <div class="reveal">
+        <div class="section-eyebrow">About Tracie</div>
+        <h2>Biblical mindset coach. Author. <em>Speaker.</em></h2>
+        <p>Tracie Bonds is a biblical mindset coach, author, speaker, and host of The Daily Prayer Call. She helps guide believers to pray, listen, and obey.</p>
+        <p>I really do believe that the voice of God is the most powerful, available, and underused gift in the life of a believer. What you will find here is the overflow of more than thirteen years of gathering with prayer warriors, learning to listen, and learning to obey.</p>
+        <p class="signature">With LOVE & GREAT EXPECTATION,<br>Tracie</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="prayer-call" id="prayer">
+  <div class="container">
+    <div class="section-eyebrow">Daily Prayer Call</div>
+    <h2>Pray with us, <em>weekday mornings.</em></h2>
+    <p>For over thirteen years, The Daily Prayer Call has been a faithful gathering of believers seeking God together. You are welcome here.</p>
+
+    <div class="prayer-meta">
+      <strong>Monday &mdash; Friday</strong><br>
+      10:30 AM EST &nbsp;|&nbsp; 9:30 AM CST &nbsp;|&nbsp; 8:30 AM MST &nbsp;|&nbsp; 7:30 AM PST
+    </div>
+
+    <div class="prayer-cta-wrap">
+      <p class="prayer-cta-note">Enter your information below and we will send you the dial-in details, plus email them to you so you always have them handy.</p>
+
+      <form class="form-fields prayer-form" id="prayerForm">
+        <input type="text" name="first_name" placeholder="First name" required />
+        <input type="email" name="email" placeholder="Email address" required />
+        <button type="submit">Send Me the Dial-In Number</button>
+      </form>
+
+      <div class="success-msg" id="prayerSuccessMsg">
+        Thank you. The dial-in details are on their way to your inbox. We will see you on the call.
+      </div>
+
+      <p class="form-note">Your information is kept private and never shared. We ask in order to protect the integrity of this sacred space.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="sign-off">With LOVE &amp; GREAT EXPECTATION</p>
+
+    <div class="footer-logo">
+      <img src="images/12stones-logo.png" alt="12 Stones Press" />
+    </div>
+
+    <p>&copy; <span id="year"></span> Tracie Bonds. All For Him LLC.</p>
+    <p>Published through 12 Stones Press.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const launchDate = new Date('2026-05-27T07:00:00Z').getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+
+    if (distance < 0) {
+      document.getElementById('cd-days').textContent = '0';
+      document.getElementById('cd-hours').textContent = '00';
+      document.getElementById('cd-mins').textContent = '00';
+      document.getElementById('cd-secs').textContent = '00';
+      document.querySelector('.countdown-label').textContent = 'Available Now on Kindle';
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById('cd-days').textContent = days;
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  document.getElementById('waitlistForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('successMsg').classList.add('visible');
+    this.style.display = 'none';
+  });
+
+  document.getElementById('prayerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('prayerSuccessMsg').classList.add('visible');
+    this.style.display = 'none';
+  });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('in');
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
