@@ -248,15 +248,7 @@
       <h3>Get notified first</h3>
       <p>Be the first to know when the Workbook, Journal, and Leader's Guide become available.</p>
 
-      <form class="form-fields" id="waitlistForm">
-        <input type="text" name="first_name" placeholder="First name" required />
-        <input type="email" name="email" placeholder="Email address" required />
-        <button type="submit">Join the Waitlist</button>
-      </form>
-
-      <div class="success-msg" id="successMsg">
-        You're on the list. I cannot wait to share these with you.
-      </div>
+      <script async data-uid="0c765f9136" src="https://tracie-bonds.kit.com/0c765f9136/index.js"></script>
 
       <p class="form-note">No spam, ever. Unsubscribe with one click.</p>
     </div>
@@ -292,15 +284,7 @@
     <div class="prayer-cta-wrap">
       <p class="prayer-cta-note">Enter your information below and we will send you the dial-in details, plus email them to you so you always have them handy.</p>
 
-      <form class="form-fields prayer-form" id="prayerForm">
-        <input type="text" name="first_name" placeholder="First name" required />
-        <input type="email" name="email" placeholder="Email address" required />
-        <button type="submit">Send Me the Dial-In Number</button>
-      </form>
-
-      <div class="success-msg" id="prayerSuccessMsg">
-        Thank you. The dial-in details are on their way to your inbox. We will see you on the call.
-      </div>
+      <script async data-uid="d626752457" src="https://tracie-bonds.kit.com/d626752457/index.js"></script>
 
       <p class="form-note">Your information is kept private and never shared. We ask in order to protect the integrity of this sacred space.</p>
     </div>
@@ -350,18 +334,6 @@
   }
   updateCountdown();
   setInterval(updateCountdown, 1000);
-
-  document.getElementById('waitlistForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    document.getElementById('successMsg').classList.add('visible');
-    this.style.display = 'none';
-  });
-
-  document.getElementById('prayerForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    document.getElementById('prayerSuccessMsg').classList.add('visible');
-    this.style.display = 'none';
-  });
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
