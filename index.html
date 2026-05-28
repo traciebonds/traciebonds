@@ -67,15 +67,17 @@
   .btn-secondary { background: transparent; color: var(--navy); border-color: var(--navy); }
   .btn-secondary:hover { background: var(--navy); color: var(--cream); }
 
-  /* COUNTDOWN */
-  .countdown-section { background: var(--navy); color: var(--cream); padding: 50px 0; text-align: center; }
-  .countdown-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: rgba(250, 247, 242, 0.6); margin-bottom: 20px; }
-  .countdown-title { font-family: 'Fraunces', serif; font-style: italic; font-size: clamp(22px, 3vw, 30px); margin-bottom: 32px; color: var(--cream); }
-  .countdown-title strong { color: var(--pink); font-weight: 500; }
-  .countdown-grid { display: flex; justify-content: center; gap: clamp(16px, 4vw, 48px); flex-wrap: wrap; }
-  .countdown-cell { min-width: 80px; }
-  .countdown-num { font-family: 'Fraunces', serif; font-size: clamp(40px, 6vw, 64px); font-weight: 400; color: var(--pink); line-height: 1; margin-bottom: 8px; }
-  .countdown-unit { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(250, 247, 242, 0.6); }
+  /* LAUNCH BANNER */
+  .countdown-section { background: var(--navy); color: var(--cream); padding: 64px 0; text-align: center; }
+  .countdown-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--pink); font-weight: 700; margin-bottom: 18px; }
+  .countdown-title { font-family: 'Fraunces', serif; font-size: clamp(26px, 3.5vw, 38px); margin-bottom: 16px; color: var(--cream); font-weight: 500; }
+  .countdown-title strong { color: var(--pink); font-weight: 500; font-style: italic; }
+  .banner-sub { font-family: 'Inter', sans-serif; font-size: 16px; color: rgba(250, 247, 242, 0.8); margin-bottom: 32px; line-height: 1.6; max-width: 540px; margin-left: auto; margin-right: auto; }
+  .banner-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .btn-kindle { background: var(--pink); color: var(--cream); }
+  .btn-kindle:hover { background: var(--pink-deep); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 20, 148, 0.35); }
+  .btn-paperback { background: transparent; color: var(--cream); border-color: var(--cream); }
+  .btn-paperback:hover { background: var(--cream); color: var(--navy); }
 
   /* BOOK */
   .book-section { padding: 100px 0; background: var(--cream-soft); }
@@ -171,27 +173,26 @@
   <div class="container">
     <div class="launch-badge">
       <span class="dot"></span>
-      Launching 2 AM CST May 27
+      Now Available on Kindle
     </div>
     <div class="series-tag">The Radical Faith Series</div>
     <h1>God is speaking.<br><em>Can you hear Him?</em></h1>
     <p class="hero-lead">GOD, I WANT TO HEAR YOU is here. The companion Workbook, Journal, and Leader's Guide are coming next. Join the waitlist below.</p>
     <div class="hero-actions">
-      <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
-      <a href="#book" class="btn btn-secondary">About the Book</a>
+      <a href="https://a.co/d/07PbpvAK" target="_blank" rel="noopener" class="btn btn-primary">Buy on Kindle</a>
+      <a href="#waitlist" class="btn btn-secondary">Join the Waitlist</a>
     </div>
   </div>
 </section>
 
 <section class="countdown-section">
   <div class="container">
-    <div class="countdown-label">Kindle eBook Launches In</div>
-    <div class="countdown-title">GOD, I WANT TO HEAR YOU <strong>9 Essential Practices</strong></div>
-    <div class="countdown-grid" id="countdown">
-      <div class="countdown-cell"><div class="countdown-num" id="cd-days">--</div><div class="countdown-unit">Days</div></div>
-      <div class="countdown-cell"><div class="countdown-num" id="cd-hours">--</div><div class="countdown-unit">Hours</div></div>
-      <div class="countdown-cell"><div class="countdown-num" id="cd-mins">--</div><div class="countdown-unit">Minutes</div></div>
-      <div class="countdown-cell"><div class="countdown-num" id="cd-secs">--</div><div class="countdown-unit">Seconds</div></div>
+    <div class="countdown-label">Now Available</div>
+    <div class="countdown-title">GOD, I WANT TO HEAR YOU <strong>is here.</strong></div>
+    <p class="banner-sub">The Kindle edition is available now. The paperback is coming soon. Join the waitlist to be the first to know when it is ready.</p>
+    <div class="banner-actions">
+      <a href="https://a.co/d/07PbpvAK" target="_blank" rel="noopener" class="btn btn-kindle">Buy on Kindle</a>
+      <a href="#waitlist" class="btn btn-paperback">Paperback Waitlist</a>
     </div>
   </div>
 </section>
@@ -245,10 +246,10 @@
     </div>
 
     <div class="form-wrap reveal">
-      <h3>Get notified first</h3>
-      <p>Be the first to know when the Workbook, Journal, and Leader's Guide become available.</p>
+      <h3>Join the waitlist</h3>
+      <p>One signup for everything coming next. Be the first to know when the paperback, the Study Workbook, the Hearing God Journal, and the Leader's Guide become available.</p>
 
-      <script async data-uid="0c765f9136" src="https://tracie-bonds.kit.com/0c765f9136/index.js"></script>
+      <script async data-uid="341d7c2aa7" src="https://tracie-bonds.kit.com/341d7c2aa7/index.js"></script>
 
       <p class="form-note">No spam, ever. Unsubscribe with one click.</p>
     </div>
@@ -284,7 +285,7 @@
     <div class="prayer-cta-wrap">
       <p class="prayer-cta-note">Enter your information below and we will send you the dial-in details, plus email them to you so you always have them handy.</p>
 
-      <script async data-uid="d626752457" src="https://tracie-bonds.kit.com/d626752457/index.js"></script>
+      <script async data-uid="f8ede9a046" src="https://tracie-bonds.kit.com/f8ede9a046/index.js"></script>
 
       <p class="form-note">Your information is kept private and never shared. We ask in order to protect the integrity of this sacred space.</p>
     </div>
@@ -306,34 +307,6 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-
-  const launchDate = new Date('2026-05-27T07:00:00Z').getTime();
-
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = launchDate - now;
-
-    if (distance < 0) {
-      document.getElementById('cd-days').textContent = '0';
-      document.getElementById('cd-hours').textContent = '00';
-      document.getElementById('cd-mins').textContent = '00';
-      document.getElementById('cd-secs').textContent = '00';
-      document.querySelector('.countdown-label').textContent = 'Available Now on Kindle';
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const secs = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById('cd-days').textContent = days;
-    document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
-    document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
-    document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
-  }
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
